@@ -1,0 +1,13 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script>
+    //Peça para o usuário informar dois números e diga qual dos dois é o maior número.
+    const Numero1 = Number(prompt('Informe um número:').replace(",","."));
+    const Numero2 = Number(prompt('Informe um número diferente do anterior:').replace(",","."));
+
+    if(Numero1 > Numero2) {
+        alert(`${Numero1.toFixed(1).replace(".",",")} é maior que ${Numero2.toFixed(1).replace(".",",")}.`);
+    }
+    else{
+        alert(`${Numero2.toFixed(1).replace(".",",")} é maior que ${Numero1.toFixed(1).replace(".",",")}.`);
+    }
+</script>

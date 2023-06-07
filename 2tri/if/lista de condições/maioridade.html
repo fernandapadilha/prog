@@ -1,0 +1,18 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script>
+    //Peça para o usuário informar o seu ano de nascimento e calcule se ele já atingiu a maioridade.
+    const ano = Number(prompt("Informe o ano do seu nascimento:").trim());
+
+    //const data = new Date();
+    //const anoAtual = data.getFullYear();
+    //if(ano <= 2005) {
+    const data = new Date().getFullYear();
+
+    if (data - 18 >= ano) {
+        alert("Maior de idade.");
+    }
+    else {
+        alert("Menor de idade.");
+    }
+
+</script>

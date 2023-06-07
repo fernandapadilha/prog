@@ -1,0 +1,16 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script>
+    //Peça para o usuário informar a sua idade e diga se ele está apto a votar ou não.
+    const idade = Number(prompt("Informe a sua idade:").trim());
+    const possuiTitulo = prompt(`Você possui titulo eleitoral?(S ou N)`).toUpperCase().trim();
+
+    if (possuiTitulo != "S" || "N") {
+
+        if (idade >= 16 && possuiTitulo == "S") {
+            alert('Você pode votar no lulinha!!');
+        }
+        else {
+            alert("Você não está apto a votar.");
+        }
+    }
+</script>

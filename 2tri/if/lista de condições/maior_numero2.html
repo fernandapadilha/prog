@@ -1,0 +1,19 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script>
+    //Peça para o usuário informar três números e diga qual dos três é o maior número
+    const Numero1 = Number(prompt('Informe um número:'));
+    const Numero2 = Number(prompt('Informe um número diferente do anterior:'));
+    const Numero3 = Number(prompt('Informe um número diferente do anterior:'));
+
+    if (Numero1 > Numero2 && Numero1 > Numero3) {
+        alert(`${Numero1} é maior que ${Numero2} e ${Numero3}.`);
+    }
+    else if (Numero2 > Numero1 && Numero1 > Numero3) {
+        alert(`${Numero2} é maior que ${Numero1} e ${Numero3}.`);
+    }
+    else {
+        alert(`${Numero3} é maior que ${Numero1} e ${Numero2}.`);
+    }
+
+
+</script>

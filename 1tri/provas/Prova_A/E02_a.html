@@ -1,0 +1,20 @@
+<script>
+    /*
+    PROBLEMA: Pesquisa de preço
+    Uma pessoa deseja realizar pesquisa de preço em três diferentes postos de combustível.
+    Peça para o usuário informar cada um dos valores pesquisados. Calcule e apresente a média do preço do combustível.
+    */
+
+    //ENTRADA
+    const posto1 = Number(prompt("Informe o valor da gasolina:").replace(",", "."));
+    const posto2 = Number(prompt('Informe o valor da gasolina no segundo posto:').replace(",", "."));
+    const posto3 = Number(prompt("informe o valor da gasolia no terceiro posto:").replace(",", "."));
+
+
+    //PROCESSAMENTO
+    const media = posto1 + posto2 + posto3 / (3);
+
+    //SAÍDA
+    alert(`O preço do combustível sai na média de ${media.toFixed(2).replace(".", ",")}`);
+
+</script>

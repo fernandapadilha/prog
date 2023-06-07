@@ -1,0 +1,20 @@
+<script>
+    /*
+    PROBLEMA: Ração canina
+    Um cão deve comer, diariamente, algumas gramas de ração. Aos finais de semana ele come 15% a mais do que em dias úteis.
+    Peça para o usuário informar quantas gramas o cão come diariamente e calcule qual o peso da ração que é consumida semanalmente.
+    Ao final, apresente o resultado.
+    */
+
+    //ENTRADA
+    const diariamente = Number(prompt(`Quantas gramas o seu cachorro consome diariamente:`));
+
+
+    //PROCESSAMENTO
+    const fimDeSemana = diariamente * (15);
+    const semanalmente = diariamente + fimDeSemana;
+
+    //SAÍDA
+    alert(`Seu cão consome semanalmente ${semanalmente}g de ração.`);
+
+</script>

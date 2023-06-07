@@ -1,0 +1,33 @@
+<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+<script>
+    /*
+    //PROBLEMA
+    Faça um script que leia três números e mostre-os em ordem decrescente.
+    */
+
+    //ENTRADA
+    let n1 = Number(prompt(`Informe um número:`).replace(",", ".").trim());
+    let n2 = Number(prompt(`Informe outro número:`).replace(",", ".").trim());
+    let n3 = Number(prompt(`Informe outro número:`).replace(",", ".").trim());
+    let n4 = n1
+    //PROCESSAMENTO
+    if (n2 > n1) {
+        n4 = n2
+        n2 = n1
+        n1 = n4
+    }
+    if (n3 > n1) {
+        n4 = n3
+        n3 = n1
+        n1 = n4
+    }
+    if (n3 > n2) {
+        n4 = n3
+        n3 = n2
+        n2 = n4
+    }
+    else (`Resposta invalida`);
+    alert(`${n1}, ${n2}, ${n3}.`);
+    //SAÍDA
+    
+</script>
