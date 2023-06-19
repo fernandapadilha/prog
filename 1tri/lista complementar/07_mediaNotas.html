@@ -7,11 +7,14 @@
     */
 
     //ENTRADA
-    
+    let n1 = Number(prompt(`Informe a sua nota do primeiro trimestre:`).trim().replace(",","."));
+    let n2 = Number(prompt(`Informe a sua nota do segundo trimestre:`).trim().replace(",","."));
+    let n3 = Number(prompt(`Informe a sua nota do terceiro trimestre:`).trim().replace(",","."));
+
     
     //PROCESSAMENTO
-    
+    const media = (n1 + n2 + n3) / 3;
     
     //SAÍDA
-    
+    alert(`Sua média final é ${media}.`);
 </script>

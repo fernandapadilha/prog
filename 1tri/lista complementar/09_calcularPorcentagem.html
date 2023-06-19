@@ -6,11 +6,12 @@
     */
 
     //ENTRADA
-
+    const p = Number(prompt(`Informe o valor do produto:`).trim().replace(",","."));
+    const d = Number(prompt(`Informe o valor durante a promoção:`).trim().replace(",","."));
     
     //PROCESSAMENTO
-    
+    let v = (p-d)*(p/100); 
     
     //SAÍDA
-    
+    alert(`O preço será de ${v.toFixed(1).replace(".",",")}%.`);
 </script>
