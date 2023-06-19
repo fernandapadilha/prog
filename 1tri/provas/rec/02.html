@@ -1,0 +1,13 @@
+<script>
+    /*
+     Desenvolva um programa que pergunte para o aluno a nota obtida no primeiro, segundo e no terceiro trimestre. Calcule e apresente a média final do aluno.
+    */
+
+    const n1 = Number(prompt(`Informe a sua nota do primeiro trimestre:`).trim().replace(",", "."));
+    const n2 = Number(prompt(`Informe a sua nota do segundo trimestre:`).trim().replace(",", "."));
+    const n3 = Number(prompt(`Informe a sua nota do terceiro trimestre:`).trim().replace(",", "."));
+
+    const media = (n1 + n2 + n3) / 3;
+
+    alert(`As suas notas foram ${n1.toFixed(1).replace(".", ",")}, ${n2.toFixed(1).replace(".", ",")} e ${n3.toFixed(1).replace(".", ",")}. A sua média anual foi ${media.toFixed(1).replace(".", ",")}.`);
+</script>

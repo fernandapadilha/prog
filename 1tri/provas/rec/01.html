@@ -1,0 +1,11 @@
+<script>
+    /* Desenvolva um programa que pergunte para o usuário a Carga Horária total de uma disciplina e também pergunte qual a Carga Horária que foi cumprida pelo aluno. Ao final, o programa deve informar qual a porcentagem de Carga Horária que foi cumprida pelo aluno. 
+    */
+    let cargaH = Number(prompt(`Informe a carga horária completa de uma disciplina:`).trim().replace(",", "."));
+    let cargaC = Number(prompt(`Informe quantas horas foram cumpridas:`).trim().replace(",", "."));
+
+    const porcentagem = (cargaC / cargaH) * 100;
+
+    alert(`A carga horária total da disciplina é de ${cargaH} horas e você já cumpriu ${cargaC} horas. Isso equivale a ${porcentagem.toFixed(1).replace(".", ",")}% da carga horária total."`);
+
+</script>
