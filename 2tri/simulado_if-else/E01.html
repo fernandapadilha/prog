@@ -1,0 +1,23 @@
+<script>
+    //PROBLEMA: Big Brother Dev
+    //Peça para o usuário informar a nota que o aluno que ajudou (TUTOR) obteve no terceiro trimestre.
+    //Peça também para o usuário informar a nota que o aluno ajudado obteve no terceiro trimestre.
+    //Considere que, se o aluno ajudado obteve nota maior do que o aluno que ajudou (TUTOR), o programa apresentará na tela a mensagem
+    //"CRIA MAIOR QUE O CRIADOR" e também apresentará a nota do aluno ajudado.
+    //Contudo, caso o aluno que ajudou (TUTOR) obteve maior nota, bonifique-o com um adicional de 10% da nota do aluno ajudado,
+    //e o programa apresentará a mensagem "CONTINUE ENSINANDO!" e também apresentará a nota final do aluno que ajudou (TUTOR).
+
+    //ENTRADA
+    let tutor = Number(prompt(`Informe a nota que o tutor obteve no terceiro trimeste:`).trim().replace(",", "."));
+    let aluno = Number(prompt(`Informe a nota do aluno no terceiro trimestre:`).trim().replace(",", "."));
+    const boni = tutor + (aluno * 0.01);
+
+    //PROCESSAMENTO
+    if (aluno > tutor) alert(`CRIA MAIOR QUE O CRIADOR! Você tirou ${aluno.toFixed(1).replace(".", ",")}.`);
+    else if (aluno <= tutor) alert(`CONTINUE ENSINANDO! Você tirou ${boni.toFixed(1).replace(".", ",")}.`);
+    else alert(`Resposta inválida.`);
+
+
+    //SAÍDA
+
+</script>

@@ -1,0 +1,38 @@
+<script>
+    //PROBLEMA: Compra na Feira
+    //Considere que a pessoa foi até a feira e realizou algumas compras, sendo:
+    //Mamão: 5 Unidades
+    //Melancia: 3 Kg
+    //Abacate: 4 Unidades
+    //Cebola: 1.1 Kg
+    //Peça para o usuário informar o preço do Kg ou da Unidade de cada um dos produtos que comprou (citados acima) e
+    //peça também para o usuário informar quanto dinheiro possui para realizar a compra.
+    //Calcule o custo total dos alimentos e verifique se há dinheiro suficiente para realizar a compra, 
+    //indicando se sobrará ou faltará dinheiro, e também apresentando qual foi a quantia que sobrou ou faltou para realizar a compra. 
+    //Apresente também na tela o valor total da compra.
+
+    //ENTRADA
+    let mamao = Number(prompt(`Qual o preço do kg do mamão:`).trim().replace(",", "."));
+    let melancia = Number(prompt(`Qual o preço do kg da melancia:`).trim().replace(",", "."));
+    let abacate = Number(prompt(`Qual o preço do kg do abacate:`).trim().replace(",", "."));
+    let cebola = Number(prompt(`Qual o preço do kg da cebola:`).trim().replace(",", "."));
+    let dinheiro = Number(prompt(`Qual a quantia de dinheiro que você possui:`).trim().replace(",", "."));
+
+    const pma = mamao *= 5;
+    const pme = melancia *= 3;
+    const pAba = abacate *= 4;
+    const pceb = cebola *= 1.1;
+    const total = pma + pme + pAba + pceb;
+    
+
+
+    if (total > dinheiro) {
+        const falta = total - dinheiro;
+        alert(`Faltará R$${falta.toFixed(2).replace(".", ",")} para você efetuar a sua compra.`);
+    }
+    else if (total < dinheiro) {
+        const sobra = dinheiro - total;
+        alert(`Sobrará R$${sobra.toFixed(2).replace(".", ",")}.`)
+    }
+    else alert(`Não sobrará e nem faltará dinheiro nesta compra.`);
+</script>
