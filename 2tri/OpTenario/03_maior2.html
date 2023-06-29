@@ -1,0 +1,15 @@
+<meta charset="UTF-8">
+<script>
+    //Problema: Maior 2
+    //Construa um algoritmo que leia dois números inteiros. Verifique qual dos dois números é maior e o escreva.
+
+    //Entrada
+    const n1 = parseInt(prompt(`Informe um número inteiro:`).trim());
+    const n2 = parseInt(prompt(`informe outro número inteiro`).trim());
+    
+    //Processamento
+    let msgFinal = (n1 > n2) ? `${n1} é maior que ${n2}.` : (n2 > n1) ? `${n2} é maior que ${n1}.` : `${n1} é igual a ${n2}.`;
+    
+    //Saída
+    alert(msgFinal);
+</script>
