@@ -8,11 +8,28 @@
     // - cães grandes: fator 7.
 
     // ENTRADA
-
+    let idade = parseInt(prompt(`Informe a idade do seu cachorro:`).trim());
+    const porte = prompt(`Qual o porte do seu auau( "G" - grande | "M" - médio | "P" - pequeno)`).trim().toUpperCase();
     
     // PROCESSAMENTO
-
+    switch (porte) {
+       
+        case "G":
+        idade *= 7;
+        alert(`Seu auau tem ${idade} anos humanos.`)
+            break;
+        case "M":
+        idade *= 6;
+        alert(`Seu auau tem ${idade} anos humanos.`)
+        break;
+        case "P":
+        idade *= 5;
+        alert(`Seu auau tem ${idade} anos humanos.`)
+        break;
     
-    // SAÍDA
-
+        default:
+            alert(`Resposta inválida.`)
+            break;
+    }
+    
     </script>

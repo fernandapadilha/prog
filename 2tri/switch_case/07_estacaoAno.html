@@ -6,11 +6,68 @@
     */
 
     //ENTRADA
+    const hemisferio = prompt(`Você mora no hemisfério norte ou sul?`).trim().replace("hemisfério", "").toLowerCase();
+    const mes = prompt(`Mês atual:`).trim().toLowerCase();
 
-    
     //PROCESSAMENTO
+    switch (hemisferio) {
+        case "sul":
+            switch (mes) {
+                case "janeiro":
+                case "fevereiro":
+                case "março":
+                    alert(`É verão, meu companheiro.`)
+                    break;
+                case "abril":
+                case "maio":
+                case "junho":
+                    alert(`É outono, meu companheiro.`)
+                    break;
+                case "julho":
+                case "agosto":
+                case "setembro":
+                    alert(`É inverno, meu companheiro.`)
+                    break;
+                case "outubro":
+                case "novembro":
+                case "dezembro":
+                    alert(`É primavera, meu companheiro.`)
+                    break;
+                default:
+                    alert(`Nome dos meses por extenso.`)
+                    break;
+            }
+            break;
+
+        case "norte":
+            switch (mes) {
+                case "janeiro":
+                case "fevereiro":
+                case "março":
+                    alert(`É inverno, meu companheiro.`)
+                    break;
+                case "abril":
+                case "maio":
+                case "junho":
+                    alert(`É primavera, meu companheiro.`)
+                    break;
+                case "julho":
+                case "agosto":
+                case "setembro":
+                    alert(`É verão, meu companheiro.`)
+                    break;
+                case "outubro":
+                case "novembro":
+                case "dezembro":
+                    alert(`É outobo, meu companheiro.`)
+                    break;
+                default:
+                    alert(`Nome dos meses por extenso.`)
+                    break;
+            }
+            break;
+    }
 
 
-    //SAÍDA
 
 </script>

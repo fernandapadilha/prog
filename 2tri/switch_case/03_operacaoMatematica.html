@@ -31,6 +31,17 @@
             alert(`Resposta invalida.`)
             break;
     }
+    if (!isNaN(n3)) {
+        if (n3 % 2 == 0) alert(`${n3} é par.`);
+        else alert(`${n3} é impar.`);
+
+        if (n3 >= 0) alert(`${n3} é positivo.`);
+        else alert(`${n3} é negativo.`);
+
+        if (Number.isInteger(n3)) alert(`${n3} é inteiro.`);
+        else alert(`${n3} é decimal.`);
+    }
+    else alert(`Resposta inválida.`);
     
 
 </script>

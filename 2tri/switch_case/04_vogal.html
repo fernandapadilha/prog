@@ -3,11 +3,17 @@
     //PROBLEMA: Vogal - Construa um programa que leia um caractere e informe se este caractere é uma vogal.
 
     // ENTRADA
-
+    const letra = prompt(`Informe uma letra:`).trim().toLowerCase();
+    switch (letra) {
+        case "a":
+        case "e":
+        case "i":
+        case "o":
+        case "u":
+            alert(`${letra} é uma vogal.`);
+            break;
     
-    // PROCESSAMENTO
-
-    
-    // SAÍDA
-
+        default: alert(`${letra} não é uma vogal.`);
+            break;
+    }
 </script>
