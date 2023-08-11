@@ -8,10 +8,20 @@
     //A lista completa de compras é: fruta1, fruta2, fruta3, bebida1, bebida2, bebida3.
 
     //ENTRADA
+    const f1 = prompt(`Informe uma fruta:`).trim();
+    const f2 = prompt(`Informe outra fruta:`).trim();
+    const f3 = prompt(`Informe mais uma fruta:`).trim();
+    const b1 = prompt(`informe um bebida:`).trim();
+    const b2 = prompt(`Informe outra bebida:`).trim();
+    const b3 = prompt(`Informe mais uma bebida:`).trim();
+
+    const frutas = [f1, f2, f3];
+    const bebidas = [b1, b2, b3];
+
+    alert(frutas.join(", "));
+    alert(bebidas.join(", "));
+    alert(frutas.join(", ") + ", " + bebidas.join(", "));
     
-
-    //PROCESSAMENTO
-
 
     //SAÍDA
 

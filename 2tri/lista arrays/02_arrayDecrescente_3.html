@@ -1,6 +1,7 @@
 <script>
     //Problema: Array em ordem decrescente
-    //Peça para um usuário inserir três números. Crie um array com os três números, colocando-os em ordem decrescente. Para ordenar, NÃO use o método reverse();
+    //Peça para um usuário inserir três números. Crie um array com os três números, colocando-os em ordem decrescente. 
+    //Para ordenar, NÃO use o método reverse();
     //Retorne os elementos do array, separando-os por hífen (n1 - n2 - n3).
 
     //ENTRADA
@@ -9,17 +10,36 @@
     const n3 = Number(prompt(`Informe outro número:`));
     let ordem = []
 
-    if(n> n2 && n > n3){
-        if(n2>n3){
-            ordem[n, n2, n3]
-            alert(ordem[2] + " - " + ordem[1] + " - " + ordem[0])
+    if (n > n2 && n > n3) {
+        if (n2 > n3) {
+            ordem = [n, n2, n3]
+            alert(ordem[0] + " - " + ordem[1] + " - " + ordem[2])
         }
-        else{
-            ordem[n, n3, n2]
-            alert(ordem[2] + " - " + ordem[1] + " - " + ordem[0])
+        else {
+            ordem = [n, n3, n2]
+            alert(ordem[0] + " - " + ordem[1] + " - " + ordem[2])
         }
     }
-
+    else if (n2 > n && n2 > n3) {
+        if(n > n3){
+            ordem = [n2, n, n3]
+            alert(ordem[0] + " - " + ordem[1] + " - " + ordem[2])
+        }
+        else{
+            ordem = [n2, n3, n]
+            alert(ordem[0] + " - " + ordem[1] + " - " + ordem[2])
+        }
+    }
+    else{
+        if(n > n2) {
+            ordem = [n3, n, n2]
+            alert(ordem[0] + " - " + ordem[1] + " - " + ordem[2])
+        }
+        else{
+            ordem = [n3, n2, n]
+            alert(ordem[0] + " - " + ordem[1] + " - " + ordem[2])
+        }
+    }
     //vou continuar depois!
 
 </script>
