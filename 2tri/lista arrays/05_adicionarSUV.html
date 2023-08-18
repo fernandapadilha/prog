@@ -7,12 +7,14 @@
 
     //ENTRADA
     let carrosSUVA = ["tiggo", "sportage", "tucson", "ecosport"];
-    let carrosSUVN = ["tiggo", "sportage", "tucson", "ecosport"];
-    const adicionar = prompt(`qual carro você deseja remover: (tiggo, sportage, tucson ou ecosport)`)
+    
+    const adicionar = prompt(`qual carro você deseja adicionar:`)
 
     //PROCESSAMENTO
-
+    let carrosSUVN = [carrosSUVA, adicionar];
 
     //SAÍDA
+
+    alert(`Lista antiga: ${carrosSUVA.join(", ")}. Lista nova: ${carrosSUVN.join(", ")}`)
 
 </script>
