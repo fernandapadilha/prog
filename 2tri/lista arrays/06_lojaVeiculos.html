@@ -1,21 +1,55 @@
 <script>
-    //Problema: Loja de veículos
-    //Crie os seguintes arrays:
-    // let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
-    // let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
-    // let carrosHatch = ["308", "Focus", "i30"];
-    
-    //Peça para o usuário informar mais três veículos para serem inseridos na lista. Para inserir na lista correta, 
-    //peça também para o usuário identificar o tipo de veículo que deseja inserir, se é SUV, Sedan ou Hatch.
+  //Problema: Loja de veículos
+  //Crie os seguintes arrays:
+  // let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+  // let cassosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+  // let carrosHatch = ["308", "Focus", "i30"];
 
-    //Apresente a lista final de cada tipo de veículo.
+  //Peça para o usuário informar mais três veículos para serem inseridos na lista. Para inserir na lista correta,
+  //peça também para o usuário identificar o tipo de veículo que deseja inserir, se é SUV, Sedan ou Hatch.
 
-    //ENTRADA
-    
+  //Apresente a lista final de cada tipo de veículo.
 
-    //PROCESSAMENTO
+  //ENTRADA
 
+  const add1 = prompt(`Informe um veículo a ser inserido:`);
+  const listaEscolhida1 = prompt(
+    `Informe a lista em que deseja adicionar o veículo anterior: (SUV - Sedan - Hatch)`
+  )
+    .trim()
+    .toLowerCase();
+  const add2 = prompt(`Informe um veículo a ser inserido:`);
+  const listaEscolhida2 = prompt(
+    `Informe a lista em que deseja adicionar o veículo anterior: (SUV - Sedan - Hatch)`
+  )
+    .trim()
+    .toLowerCase();
+  const add3 = prompt(`Informe um veículo a ser inserido:`);
+  const listaEscolhida3 = prompt(
+    `Informe a lista em que deseja adicionar o veículo anterior: (SUV - Sedan - Hatch)`
+  )
+    .trim()
+    .toLowerCase();
 
-    //SAÍDA
+  let carrosSUV = ["Tiggo", "Sportage", "Tucson", "EcoSport"];
+  let carrosSedan = ["Civic", "Corolla", "Arizzo", "Fusion"];
+  let carrosHatch = ["308", "Focus", "i30"];
 
+  //PROCESSAMENTO
+  if (listaEscolhida1 == "suv") carrosSUV.push(add1);
+  else if (listaEscolhida1 == "sedan") carrosSedan.push(add2);
+  else if (listaEscolhida1 == "hatch") carrosHatch.push(add3);
+
+  if (listaEscolhida2 == "suv") carrosSUV.push(add1);
+  else if (listaEscolhida2 == "sedan") carrosSedan.push(add2);
+  else if (listaEscolhida2 == "hatch") carrosHatch.push(add3);
+
+  if (listaEscolhida3 == "suv") carrosSUV.push(add1);
+  else if (listaEscolhida3 == "sedan") carrosSedan.push(add2);
+  else if (listaEscolhida3 == "hatch") carrosHatch.push(add3);
+
+  //SAÍDA
+  alert(`SUV: ${carrosSUV.join(", ")}.`);
+  alert(`Sedan: ${carrosSedan.join(", ")}`);
+  alert(`Hatch: ${carrosHatch.join(", ")}`);
 </script>
