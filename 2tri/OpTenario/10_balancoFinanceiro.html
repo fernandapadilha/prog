@@ -20,7 +20,7 @@
     //Processamento
     let msgFinal = ((agua + luz + telefone + mercado) < salario) ? `Sobrou R$${(salario - (agua + luz + telefone + mercado)).toFixed(2).replace(".", ",")} do seu salário.`
         : ((agua + luz + telefone + mercado) > salario) ? `Faltou R$${(agua + luz + telefone + mercado - salario).toFixed(2).replace(".", ",")} para pagar suas despesas.`
-            : `Resposta inválida.`
+            : `Resposta inválida.`;
 
     //Saída
     alert(msgFinal)
