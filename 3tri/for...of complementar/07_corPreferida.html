@@ -9,11 +9,14 @@
 
     //Entrada
     let cores = ["Branco", "Azul", "Marrom", "Cinza", "Verde", "Amarelo", "Vermelho", "Preto"];
-
+    let cF = []
 
     //Processamento
-
+    for (const cor of cores) {
+        let fav = prompt(`Você gosta dessa cor(Sim ou Não): ${cor}`).toLowerCase();
+        if(fav == 'sim') cF.push(cor)
+    }
 
     //Saída
-
+    document.write(cF.join(', '))
 </script>

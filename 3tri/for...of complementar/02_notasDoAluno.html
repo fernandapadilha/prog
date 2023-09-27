@@ -16,11 +16,11 @@
     soma += nota;
     media.push(nota);
   }
-  notasAluno.sort((a, b) => a - b);
+  media.sort((a, b) => a - b);
 
   //Saída
   console.log(media);
   document.write(`Maior número: ${media[media.length - 1]};
-    Menor número: ${media[media.length - 3]};
+    Menor número: ${media[0]};
     Média do aluno: ${soma / media.length}.`);
 </script>
