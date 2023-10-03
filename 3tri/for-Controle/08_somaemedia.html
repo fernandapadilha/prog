@@ -1,16 +1,24 @@
-<meta charset="UTF-8">
+<meta charset="UTF-8" />
 <script>
-    /*
+  /*
     PROBLEMA
     Faça um programa que leia 5 números e informe a soma e média dos números.
     */
 
-    //ENTRADA
+  //ENTRADA
+  let numeros = 0;
 
+  //PROCESSAMENTO
+  for (i = 5; i >= 1; i--) {
+    let somar = Number(prompt(`Insira um numero (${i} restantes):`));
+    numeros += somar;
+  }
+  numeros /= 5;
 
-    //PROCESSAMENTO
-
-
-    //SAÍDA
-
+  if (Number.isInteger(numeros) == true)
+    alert(`A média dos números informados é ${numeros}`);
+  else
+    alert(
+      `A média dos números informados é ${numeros.toFixed(2).replace(".", ",")}`
+    );
 </script>

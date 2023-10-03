@@ -1,15 +1,18 @@
 <script>
-    /*
+  /*
     PROBLEMA: Investimentos
     Joãozinho investiu R$ 1.000,00 e o investimento renderá 2% por dia útil. Quantos dias demorará para que Joãozinho consiga o total de R$ 2.000,00.
     */
 
-    //ENTRADA
+  //ENTRADA
+  let multiplos = [];
 
+  //PROCESSAMENTO
+  for (i = 100; i >= 3; i--) {
+    if (i / 3 == Math.round(i / 3)) multiplos.push(i);
+  }
+  multiplos.sort((a, b) => a - b);
 
-    //PROCESSAMENTO
-
-
-    //SAÍDA
-
+  //SAÍDA
+  alert(multiplos.join(", "));
 </script>

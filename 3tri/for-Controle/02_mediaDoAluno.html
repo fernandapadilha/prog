@@ -8,14 +8,24 @@
     */
 
   //ENTRADA
-  const qn = parseInt(prompt(`Informe quantas notas o alune obteve:`));
-  let notas = [];
+  let quantidade = parseInt(prompt(`Informe quantas notas o alune obteve:`));
+  let soma = 0;
 
   //PROCESSAMENTO
-  for (let i = 0; i < notas.length; i++) {
-    const element = notas[i];
-    
+  for (i = quantidade; i <= 1; quantidade--) {
+    let nota = Number(
+      prompt(
+        `Qual a nota que o aluno obteve?(ainda faltam ${quantidade} nota(s))`
+      )
+    );
+    soma += nota;
   }
 
   //SAÍDA
+  document.write(
+    `A média do aluno no final do período foi de ${(soma / quantidade).toFixed(
+      1
+    )}`
+  );
+  //Incompleta
 </script>

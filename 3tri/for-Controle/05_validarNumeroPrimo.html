@@ -7,16 +7,16 @@
     */
 
   //ENTRADA
-  let num = [];
-  const n = parseInt(prompt(`Informe um número:`));
+  let numero = Number(prompt(`Informe um número:`));
+  let divisivel = 0;
 
   //PROCESSAMENTO
-  for (let i = 2; i < num; i++) {
-    if(n !== 1) alert(`${n} é primo.`);
-    num.push(n);
+  for (i = 1; i <= numero; i++) {
+    if (numero % i == 0) {
+      divisivel++;
+    }
   }
 
-  //SAÍDA
-  console.log(num)
-  alert(num);
+  if (divisivel == 2) alert(`O número ${numero} é primo`);
+  else alert(`O número ${numero} não é primo`);
 </script>
