@@ -1,0 +1,19 @@
+<meta charset="UTF-8">
+<script>
+    //PROBLEMA
+    //Considere a lista abaixo:
+    // let listaDeItens = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10];
+    //Apresente apenas os números pares. Apresente também a quantidade de números pares que existem e apresente a quantidade de elementos da lista original.
+
+    //ENTRADA
+    let listaDeItens = [1, "João", "Eduardo", "Joice", 3, 5, 6, 8, "Maria", 5.6, 10];
+    let par = []
+
+    //PROCESSAMENTO
+    for (const num of listaDeItens) {
+        if(num % 2 == 0) par.push(num)
+    }
+
+    //SAÍDA
+    document.write(`Números pares: ${par.join(', ')}. Quantidade: ${listaDeItens.length}.`)
+</script>
