@@ -20,13 +20,64 @@
     */
 
     //Entrada
-
+    let voto = 5;
+    let joaozinho = 0;
+    let mariazinha = 0;
+    let nulo = 0;
+    let branco = 0;
+    let total = 0;
 
     //Processamento
+    while (voto != 0) {
+        voto = Number(prompt(`
+    1. Candidato Joãozinho
+    2. Candidato Mariazinha
+    3. Nulo
+    4. Branco
+    Entre com o seu voto:`))
 
+        if (voto == 1) {
+            joaozinho++
+            total++
+        }
+        else if (voto == 2) {
+            mariazinha++
+            total++
+        }
+        else if (voto == 3) {
+            nulo++
+            total++
+        }
+        else if (voto == 4) {
+            branco++
+            total++
+        }
+        else if (voto == 0) {
+            if (joaozinho > mariazinha) {
+                alert(`
+            Joãozinho: ${joaozinho} votos. Candidato Eleito.
+            Mariazinha: ${mariazinha} votos.
+            Nulo: ${total * nulo / 100}%.
+            Branco: ${total * branco / 100}%.`)
+            }
+            else if (joaozinho < mariazinha) {
+                alert(`
+            Joãozinho: ${joaozinho} votos.
+            Mariazinha: ${mariazinha} votos. Candidato Eleito.
+            Nulo: ${total * nulo / 100}%.
+            Branco: ${total * branco / 100}%.`)
+            }
+            else {
+                alert(`
+            Joãozinho: ${joaozinho} votos.
+            Mariazinha: ${mariazinha} votos.
+            Nulo: ${total * nulo / 100}%.
+            Branco: ${total * branco / 100}%.
+            Empate.`)
+            }
+        }
+    }
 
     //Saída
 
 </script>
-
-
