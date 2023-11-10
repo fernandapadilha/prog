@@ -1,18 +1,21 @@
 <script>
     /*
     Problema: Calcular área e perímetro de um círculo
-    Desenvovla um programa que contenha uma função que calcule a área e o perímetro de um círculo. A fórmula para o cálculo da área de um círculo é a seguinte:
+    Desenvovla um programa que contenha uma função que calcule a área e o perímetro de um círculo. 
+    A fórmula para o cálculo da área de um círculo é a seguinte:
     A = π * r²
     Onde π é uma constante e r é o raio do círculo. A fórmula para o cálculo do perímetro de um círculo é a seguinte:
     P = 2 * π * r
     */
 
     //Entrada
-
+    let r = Number(prompt(`Infrme o valor do raio:`));
 
     //Processamento
-
+    function calculo(r) {
+        alert(`area: ${Math.round(Math.PI * r ** 2)}; perímetro: ${Math.round(2 * Math.PI * r)}`)
+    }
 
     //Saída
-
+    calculo(r)
 </script>

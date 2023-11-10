@@ -7,11 +7,20 @@
     */
 
     //Entrada
+    let palavra = prompt(`Informe a palavra:`)
 
 
     //Processamento
-
+    function calculo(letra) {
+        let soma = 0;
+        for (let i = 0; i < palavra.length; i++) {
+            if (palavra[i] == "a" || palavra[i] == "e" || palavra[i] == "i" || palavra[i] == "o" || palavra[i] == "u") {
+                soma++
+            }
+        }
+        return (soma);
+    }
 
     //Saída
-
+    alert(`${calculo(palavra)} vogais`)
 </script>
