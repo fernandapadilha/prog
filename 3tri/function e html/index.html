@@ -8,39 +8,44 @@
 </head>
 
 <body>
-
-    <form>
-        <select name="idioma" id="idioma">
-            <option value="es">Español</option>
-            <option value="en">English</option>
-            <option value="fr">français</option>
-            <option value="br" selected="selected">Português-Brasil</option>
-
-        </select>
-
+    <fieldset>
         <div>
-            <input type="text" name="valor1" id="valor1">
-            <input type="text" name="valor2" id="valor2">
+            <h2 id="titulo">Calculadora</h2>
         </div>
-
         <div>
-            <input type="button" value="soma" id="btSoma">
-            <input type="button" value="subtração" id="btSubtracao">
-            <input type="button" value="multiplicação" id="btMultiplicacao">
-            <input type="button" value="divisão" id="btDivisao">
+            <h2></h2>
         </div>
+        <form>
 
-        <div>
-            <p id="resultado"></p>
-        </div>
+            <select name="idioma" id="idioma">
+                <option value="es">Español</option>
+                <option value="en">English</option>
+                <option value="fr">français</option>
+                <option value="br" selected="selected">Português-Brasil</option>
 
-        <div>
-            <input type="button" value="Botao 1" id="btn1" onclick="clq1()">
-            <input type="button" value="Botao 2" id="btn2">
-        </div>
+            </select>
+
+            <div>
+                <input type="text" name="valor1" id="valor1">
+                <input type="text" name="valor2" id="valor2">
+            </div>
+
+            <div>
+                <input type="button" value="soma" id="btSoma">
+                <input type="button" value="subtração" id="btSubtracao">
+                <input type="button" value="multiplicação" id="btMultiplicacao">
+                <input type="button" value="divisão" id="btDivisao">
+            </div>
+
+            <div>
+                <p id="resultado"></p>
+            </div>
+    </fieldset>
     </form>
 </body>
 
 <script type="text/javascript" src="script.js"></script>
+<script type="text/javascript" src="math.js"></script>
+<script type="text/javascript" src="translate.js"></script>
 
 </html>

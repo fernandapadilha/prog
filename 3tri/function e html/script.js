@@ -1,14 +1,3 @@
-function clq1() {
-    alert("você clicou no botão 1");
-}
-
-let btn2 = document.getElementById("btn2");
-btn2.addEventListener("click", clq2);
-
-function clq2() {
-    alert(`Você clicou o botão 2`);
-}
-
 let valor1 = document.querySelector("#valor1");
 let valor2 = document.querySelector("#valor2");
 let resultado = document.querySelector("#resultado");
@@ -49,33 +38,7 @@ function divisão(a, b) {
     resultado.textContent = (a / b);
 }
 
-let selectIdioma = document.querySelector("#idioma")
-selectIdioma.addEventListener("change", function () {
-    if (this.value == "br") {
-        btSoma.value = "Somar";
-        btSubtracao.value = "Subtrair";
-        btMultiplicacao.value = "Multiplicar";
-        btDivisao.value = "Dividir";
-    }
-    else if (this.value == "es") {
-        btSoma.value = "Sumar";
-        btSubtracao.value = "Restar"
-        btMultiplicacao.value = "Multiplicar";
-        btDivisao.value = "Dividir";
-    }
-    else if (this.value == "en") {
-        btSoma.value = "add";
-        btSubtracao.value = "Subtract";
-        btMultiplicacao.value = "Multiply";
-        btDivisao.value = "divide";
-    }
-    else if (this.value == "fr") {
-        btSoma.value = "ajouter";
-        btSubtracao.value = "Soustraire";
-        btMultiplicacao.value = "Multiplication";
-        btDivisao.value = "Diviser";
-    }
-})
+
 
 /*valor1.addEventListener("keyup", function(){
     somar(Number(valor1.value), Number(valor2.value));
